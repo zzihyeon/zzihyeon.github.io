@@ -41,13 +41,18 @@ tags: [CV]
   
   * [[2]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227) Y.Cho, G.Han, H.Lee, _Character Level Bi-Directional LSTM-CNN Model for Movie Rating Prediction_, 한국정보과학회 학술발표논문집, 2018
   
-  * [[1]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07116284) Y.Cho, G.Kim, _Acquisition and Analysis of Multi-Point Temperature Data from Public Computer Labs for Designing Pleasant and Energy-Efficient Air Conditioning Rules_,  한국정보과학회 학술발표논문집, 2016
+  * [[1]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07116284) Y.Cho, G.Kim, _Acquisition and Analysis of Multi-Point Temperature Data from Public Computer Labs for Designing Pleasant and Energy-Efficient Air Conditioning Rules_,  한국정보과학회 학술발표논문집, 2016  
+  
 ## Program experience
-## Skills
+  
+## Skills  
 * Python
 * C/C++
 * Lua for Arduino
+  
 ## Awards
+  
+  
 <!--
 Here's a useless table:
 | Number | Next number | Previous number |
