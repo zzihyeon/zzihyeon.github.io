@@ -10,11 +10,12 @@ tags: [CV]
 #You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.-->
 ![main picture](/img/jeju.jpg)
 # Profile 
-![Profile picture](/img/profile.jpg){: width="100"}
+![Profile picture](/img/profile.jpg){: width="400"}
 1993-11-10  
 Traveling  
 Swimming  
-Drinking Zero-coke  
+Drinking Zero-coke 
+
 &nbsp;
 ## EDUCATION  
 #### Sogang University    
@@ -23,10 +24,11 @@ Drinking Zero-coke
      * T.A scholarship 2015 - 2016    
 
    * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
-     * 4.26 /4.5     
+     * 4.26 /4.5
+     
 &nbsp;
-## Interests  
 
+## Interests 
 #### Current
 * Machine learning, Data Analysis, System Trading   
      
