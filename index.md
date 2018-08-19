@@ -14,7 +14,7 @@ tags: [CV]
 {: refdef}
 
 ## Profile 
-![Profile picture](/img/profile.jpg){: width="200"}  
+![Profile picture](/img/profile.jpg){: width="250"}  
 * Yongwoo Cho (조용우)
 * 1993-11-10  
 * Traveling  
