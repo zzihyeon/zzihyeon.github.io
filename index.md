@@ -11,6 +11,7 @@ tags: [CV]
 ![main picture](/img/jeju.jpg)
 # Profile 
 ![Profile picture](/img/profile.jpg){: width="200"}  
+* Yongwoo Cho (조용우)
 * 1993-11-10  
 * Traveling  
 * Swimming  
@@ -33,26 +34,51 @@ tags: [CV]
 * Machine learning, Data Analysis, System Trading   
      
 #### Old
-* Computer Architecture, Iot, Cache Memory   
+* Computer Architecture, IoT, Cache Memory   
     
 &nbsp;   
 ## PUBLICATION    
+  * [4] Memory bottleneck analysis in Large Machine learning models, work in progress
+  
   * [3] B.Kim, Y.Cho, H.Lee, Shared Last-Level Cache Managemnet Scheme for Multimedia IPs in Handheld platform, work in progress
   
   * [[2]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227) Y.Cho, G.Han, H.Lee, _Character Level Bi-Directional LSTM-CNN Model for Movie Rating Prediction_, 한국정보과학회 학술발표논문집, 2018
   
   * [[1]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07116284) Y.Cho, G.Kim, _Acquisition and Analysis of Multi-Point Temperature Data from Public Computer Labs for Designing Pleasant and Energy-Efficient Air Conditioning Rules_,  한국정보과학회 학술발표논문집, 2016  
   
-## Program experience
-  
+## Projects
+* Arduino for analysis Temperature data
+* [MacSim](http://comparch.gatech.edu/hparch/macsim.html) for cache memory mangement 
+* [Gem5 Simulator](http://gem5.org/Main_Page) for multimedia IP cache memory management scheme
+* Tensorflow, keras for memory bottleneck analysis for VGG16
+
+&nbsp;   
+
 ## Skills  
 * Python
 * C/C++
 * Lua for Arduino
-  
-## Awards
-  
-  
+* Korean - Native
+* English - intermediate
+&nbsp;
+
+## Awards / Participation
+* SOSCON(Samsung Open Source CONference) 2016 HACKATHON, 2nd price
+  * arduino, Raspberry PI coding
+* 2016 Sogang Univ. LINC technology competition, Grand price(2nd)
+* Sogang Univ. 4th start-up weekend (7th)
+* 2018 Naver AI hackerton, movie rating prediction, 2nd price
+  * data preprocessing, model(LSTM, CNN)
+  * https://github.com/nomorecoke/naver-AI-final
+* 2018 SK T&B code challenge, 16th
+  * Movie recommendation
+  * Collarborative filtering with pearson similarity 
+* In progress
+  * POSCO AI Challenge - https://www.posco-aichallenge.kr/project/p02/
+  * SAMSUNG AI Challenge - https://research.samsung.com/aichallenge/data
+&nbsp;     
+
+
 <!--
 Here's a useless table:
 | Number | Next number | Previous number |
