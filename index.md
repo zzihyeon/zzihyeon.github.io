@@ -1,5 +1,5 @@
 ---
-#layout: post
+layout: post
 title: Yongwoo Cho
 #subtitle: My portfolio
 
