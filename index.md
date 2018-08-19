@@ -8,18 +8,11 @@ tags: [CV]
 
 <!--
 #You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.-->
-
-**Here is some bold text**
-
 # Profile  
 &nbsp;
 &nbsp;
-
-
-
 ### EDUCATION  
 &nbsp;
-
 #### Sogang University    
 
    * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
@@ -29,7 +22,7 @@ tags: [CV]
    * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
      * 4.26 /4.5     
 
-
+&nbsp;
 ### Interests  
 
 #### Current
@@ -38,7 +31,7 @@ tags: [CV]
 #### Old
 * Computer Architecture, Iot, Cache Memory   
     
-    
+&nbsp;   
 ### PUBLICATION    
   * [3] B.Kim, Y.Cho, H.Lee, Shared Last-Level Cache Managemnet Scheme for Multimedia IPs in Handheld platform, work in progress
   
