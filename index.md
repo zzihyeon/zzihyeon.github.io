@@ -71,7 +71,7 @@ tags: [CV]
   * Android App
 * 2018 Naver AI hackerton - movie rating prediction, 2nd price
   * data preprocessing, modeling(LSTM, CNN)
-  * (https://github.com/nomorecoke/naver-AI-final)
+  * [https://github.com/nomorecoke/naver-AI-final](https://github.com/nomorecoke/naver-AI-final)
 * 2018 SK T&B code challenge, 16th
   * Movie recommendation
   * Collarborative filtering 
