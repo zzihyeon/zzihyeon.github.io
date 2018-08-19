@@ -10,11 +10,11 @@ tags: [CV]
 #You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.-->
 ![main picture](/img/jeju.jpg)
 # Profile 
-![Profile picture](/img/profile.jpg){: width="300"}  
-1993-11-10  
-Traveling  
-Swimming  
-Drinking Zero-coke 
+![Profile picture](/img/profile.jpg){: width="200"}  
+* 1993-11-10  
+* Traveling  
+* Swimming  
+* Drinking Zero-coke 
 
 &nbsp;
 ## EDUCATION  
@@ -42,8 +42,12 @@ Drinking Zero-coke
   * [[2]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227) Y.Cho, G.Han, H.Lee, _Character Level Bi-Directional LSTM-CNN Model for Movie Rating Prediction_, 한국정보과학회 학술발표논문집, 2018
   
   * [[1]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07116284) Y.Cho, G.Kim, _Acquisition and Analysis of Multi-Point Temperature Data from Public Computer Labs for Designing Pleasant and Energy-Efficient Air Conditioning Rules_,  한국정보과학회 학술발표논문집, 2016
- 
-
+## Program experience
+## Skills
+* Python
+* C/C++
+* Lua for Arduino
+## Awards
 <!--
 Here's a useless table:
 | Number | Next number | Previous number |
