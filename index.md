@@ -53,6 +53,7 @@ tags: [CV]
 * [MacSim](http://comparch.gatech.edu/hparch/macsim.html) for cache memory mangement 
 * [Gem5 Simulator](http://gem5.org/Main_Page) for multimedia IP cache memory management scheme
 * Tensorflow, Keras for memory bottleneck analysis  
+* [System trader](https://github.com/nomorecoke/System-Trading) with kiwoom API (personal project)
 
 &nbsp;   
 
