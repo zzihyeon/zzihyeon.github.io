@@ -18,7 +18,7 @@ tags: [CV]
    * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
      * 3.57 /4.5 (Cum laude)
      * T.A scholarship 2015 - 2016  
-# 
+
    * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
      * 4.26 /4.5 
 
