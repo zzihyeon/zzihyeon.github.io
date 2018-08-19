@@ -9,7 +9,7 @@ tags: [CV]
 <!--
 #You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.-->
 ![main picture](/img/jeju.jpg)
-# Profile 
+## Profile 
 ![Profile picture](/img/profile.jpg){: width="200"}  
 * Yongwoo Cho (조용우)
 * 1993-11-10  
@@ -18,7 +18,7 @@ tags: [CV]
 * Drinking Zero-coke 
 
 &nbsp;
-## EDUCATION  
+## Education
 #### Sogang University    
    * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
      * 3.57 /4.5 (Cum laude)  
@@ -37,7 +37,7 @@ tags: [CV]
 * Computer Architecture, IoT, Cache Memory   
     
 &nbsp;   
-## PUBLICATION    
+## Publication    
   * [4] Memory bottleneck analysis in Large Machine learning models, work in progress
   
   * [3] B.Kim, Y.Cho, H.Lee, Shared Last-Level Cache Managemnet Scheme for Multimedia IPs in Handheld platform, work in progress
