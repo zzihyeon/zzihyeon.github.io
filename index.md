@@ -64,18 +64,20 @@ tags: [CV]
 
 ## Awards / Participation
 * SOSCON(Samsung Open Source CONference) 2016 HACKATHON, 2nd price
-  * arduino, Raspberry PI coding
+  * Arduino, Raspberry PI 
 * 2016 Sogang Univ. LINC technology competition, Grand price(2nd)
+  * Arduino
 * Sogang Univ. 4th start-up weekend (7th)
-* 2018 Naver AI hackerton, movie rating prediction, 2nd price
-  * data preprocessing, model(LSTM, CNN)
-  * https://github.com/nomorecoke/naver-AI-final
+  * Android App
+* 2018 Naver AI hackerton - movie rating prediction, 2nd price
+  * data preprocessing, modeling(LSTM, CNN)
+  * (https://github.com/nomorecoke/naver-AI-final)
 * 2018 SK T&B code challenge, 16th
   * Movie recommendation
-  * Collarborative filtering with pearson similarity 
+  * Collarborative filtering 
 * In progress
-  * POSCO AI Challenge - https://www.posco-aichallenge.kr/project/p02/
-  * SAMSUNG AI Challenge - https://research.samsung.com/aichallenge/data
+  * [POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/)
+  * [SAMSUNG AI Challenge](https://research.samsung.com/aichallenge/data)
 &nbsp;     
 
 
