@@ -52,7 +52,7 @@ tags: [CV]
 * Arduino for analysis Temperature data
 * [MacSim](http://comparch.gatech.edu/hparch/macsim.html) for cache memory mangement 
 * [Gem5 Simulator](http://gem5.org/Main_Page) for multimedia IP cache memory management scheme
-* Tensorflow, keras for memory bottleneck analysis for VGG16  
+* Tensorflow, Keras for memory bottleneck analysis  
 
 &nbsp;   
 
