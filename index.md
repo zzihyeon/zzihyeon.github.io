@@ -13,7 +13,7 @@ tags: [CV]
 ## Profile
 
 ### EDUCATION
-*Sogang University
+* Sogang University
 <!--
 Here's a useless table:
 | Number | Next number | Previous number |
