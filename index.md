@@ -45,12 +45,14 @@ tags: [CV]
   * [[2]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227) Y.Cho, G.Han, H.Lee, _Character Level Bi-Directional LSTM-CNN Model for Movie Rating Prediction_, 한국정보과학회 학술발표논문집, 2018
   
   * [[1]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07116284) Y.Cho, G.Kim, _Acquisition and Analysis of Multi-Point Temperature Data from Public Computer Labs for Designing Pleasant and Energy-Efficient Air Conditioning Rules_,  한국정보과학회 학술발표논문집, 2016  
-  
+
+&nbsp;   
+
 ## Projects
 * Arduino for analysis Temperature data
 * [MacSim](http://comparch.gatech.edu/hparch/macsim.html) for cache memory mangement 
 * [Gem5 Simulator](http://gem5.org/Main_Page) for multimedia IP cache memory management scheme
-* Tensorflow, keras for memory bottleneck analysis for VGG16
+* Tensorflow, keras for memory bottleneck analysis for VGG16  
 
 &nbsp;   
 
@@ -59,8 +61,9 @@ tags: [CV]
 * C/C++
 * Lua for Arduino
 * Korean - Native
-* English - intermediate
-&nbsp;
+* English - intermediate  
+
+&nbsp;  
 
 ## Awards / Participation
 * SOSCON(Samsung Open Source CONference) 2016 HACKATHON, 2nd price
