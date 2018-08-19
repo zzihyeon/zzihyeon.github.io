@@ -11,8 +11,7 @@ tags: [CV]
 # Profile  
 &nbsp;
 &nbsp;
-### EDUCATION  
-&nbsp;
+## EDUCATION  
 #### Sogang University    
 
    * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
@@ -23,7 +22,7 @@ tags: [CV]
      * 4.26 /4.5     
 
 &nbsp;
-### Interests  
+## Interests  
 
 #### Current
 * Machine learning, Data Analysis, System Trading   
@@ -32,7 +31,7 @@ tags: [CV]
 * Computer Architecture, Iot, Cache Memory   
     
 &nbsp;   
-### PUBLICATION    
+## PUBLICATION    
   * [3] B.Kim, Y.Cho, H.Lee, Shared Last-Level Cache Managemnet Scheme for Multimedia IPs in Handheld platform, work in progress
   
   * [[2]](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227) Y.Cho, G.Han, H.Lee, _Character Level Bi-Directional LSTM-CNN Model for Movie Rating Prediction_, 한국정보과학회 학술발표논문집, 2018
