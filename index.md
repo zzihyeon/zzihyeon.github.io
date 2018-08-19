@@ -6,29 +6,29 @@ title: Yongwoo Cho
 tags: [CV]
 ---
 
-#You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+<!--
+#You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.-->
 
 **Here is some bold text**
 
 ## Profile
 
 ### EDUCATION
-
-- **Sogang University**
-  * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
-    * 3.57 /4.5 (Cum laude)
-    * T.A scholarship 2015 - 2016
-     &nbsp;
-  * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
-    * 4.26 /4.5 
+#### Sogang University
+   * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
+     * 3.57 /4.5 (Cum laude)
+     * T.A scholarship 2015 - 2016  
+   # 
+   * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
+     * 4.26 /4.5 
 
 
 ### Interests
-  * Current 
-    Machine learning, Data Analysis, System Trading
-     &nbsp;
-  * Old
-    Computer Architecture, Iot, Cache Memory
+#### Current 
+* Machine learning, Data Analysis, System Trading
+     
+#### Old
+* Computer Architecture, Iot, Cache Memory
     
     
 ### PUBLICATION
