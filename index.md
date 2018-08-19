@@ -13,7 +13,12 @@ tags: [CV]
 ## Profile
 
 ### EDUCATION
-* Sogang University
+- **Sogang University**
+ * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
+  * 3.57 /4.5 (Cum laude)
+ * M.S in Embedded Computing Laboratory (Mar 2017 - Feb 2019 expecting to graduate) 
+  * 4.26 /4.5 
+  
 <!--
 Here's a useless table:
 | Number | Next number | Previous number |
