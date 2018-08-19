@@ -16,7 +16,9 @@ tags: [CV]
 ### EDUCATION
 
 #### Sogang University
+
    * B.S in Computer Science and Engineering (Mar 2012 - Feb 2017)
+   
      * 3.57 /4.5 (Cum laude)
      * T.A scholarship 2015 - 2016    
 
