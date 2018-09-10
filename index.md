@@ -72,7 +72,7 @@ tags: [CV]
 
 ## Awards / Participation
 ![Profile picture](/img/samsung-award.jpg){: width="250"}  
-* [2018 SAMSUNG AI Challenge - Data Challenge] (https://research.samsung.com/aichallenge/data) (1st prize)
+* [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
   * Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)
 * [2018 Naver AI hackerton - movie rating prediction](https://github.com/naver/ai-hackathon-2018) (2nd prize)
   * data preprocessing, modeling(LSTM, CNN)
