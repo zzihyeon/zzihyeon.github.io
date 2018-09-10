@@ -72,11 +72,12 @@ tags: [CV]
 
 ## Awards / Participation
 ![Profile picture](/img/samsung-award.jpg){: width="250"}  
-* [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
+* [2018 SAMSUNG AI Challenge - Data Challenge] (https://research.samsung.com/aichallenge/data) (1st prize)
   * Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)
-* 2018 Naver AI hackerton - movie rating prediction (2nd prize)
+* [2018 Naver AI hackerton - movie rating prediction](https://github.com/naver/ai-hackathon-2018) (2nd prize)
   * data preprocessing, modeling(LSTM, CNN)
-  * [https://github.com/nomorecoke/naver-AI-final](https://github.com/nomorecoke/naver-AI-final
+  * [https://github.com/nomorecoke/naver-AI-final](https://github.com/nomorecoke/naver-AI-final)
+   -> [Model detail with my paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227)
 * 2018 SK T&B code challenge (16th)
   * Movie recommendation
   * Collarborative filtering
@@ -88,8 +89,7 @@ tags: [CV]
 * 2016 Sogang Univ. LINC technology competition (2nd prize)
   * Arduino
 
-)
- 
+
 * In progress
   * [POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/)
   
