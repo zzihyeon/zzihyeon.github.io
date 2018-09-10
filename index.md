@@ -1,7 +1,7 @@
 ---
 #layout: post
-title: Yongwoo Cho
-#subtitle: My portfolio
+title: Welcome to My CV
+#subtitle: Yong-woo Cho
 
 tags: [CV]
 ---
