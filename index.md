@@ -53,11 +53,12 @@ tags: [CV]
 &nbsp;   
 
 ## Projects
+* Distributed Tensorflow(multi gpu and multi node) memory bottleneck analysis  
+* [System trader](https://github.com/nomorecoke/System-Trading) with kiwoom API (personal project)
 * Arduino for analysis Temperature data
 * [MacSim](http://comparch.gatech.edu/hparch/macsim.html) for cache memory mangement 
 * [Gem5 Simulator](http://gem5.org/Main_Page) for multimedia IP cache memory management scheme
-* Tensorflow, Keras for memory bottleneck analysis  
-* [System trader](https://github.com/nomorecoke/System-Trading) with kiwoom API (personal project)
+
 
 &nbsp;   
 
@@ -71,6 +72,8 @@ tags: [CV]
 &nbsp;  
 
 ## Awards / Participation
+![Profile picture](/img/posco-award.jpg){: width="250"}
+  * [POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
 ![Profile picture](/img/samsung-award.jpg){: width="250"}  
 * [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
   * Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)
@@ -91,8 +94,8 @@ tags: [CV]
 
 
 * In progress
-  * [POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/)
-  
+[Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
+You can see me in leader board with name zerocoke
 &nbsp;     
 
 
