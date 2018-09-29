@@ -74,7 +74,7 @@ tags: [CV]
 ## Awards / Participation
 ![Profile picture](/img/posco-award.jpg){: width="250"}
 * [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
-  * Swell(like Large Wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)
+  * Swell(very big wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)
 
 
 ![Profile picture](/img/samsung-award.jpg){: width="250"}  
@@ -96,9 +96,7 @@ tags: [CV]
   * Arduino
 
 * In progress
-
-
-[Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
+  * [Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
 
 
 You can see me in leader board with name zerocoke
