@@ -73,7 +73,10 @@ tags: [CV]
 
 ## Awards / Participation
 ![Profile picture](/img/posco-award.jpg){: width="250"}
-  * [POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
+* [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
+  * Swell(like Large Wave) prediction with RSCNN 
+
+
 ![Profile picture](/img/samsung-award.jpg){: width="250"}  
 * [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
   * Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)
@@ -92,9 +95,12 @@ tags: [CV]
 * 2016 Sogang Univ. LINC technology competition (2nd prize)
   * Arduino
 
-
 * In progress
+
+
 [Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
+
+
 You can see me in leader board with name zerocoke
 &nbsp;     
 
