@@ -17,9 +17,11 @@ tags: [CV]
 ![Profile picture](/img/profile.jpg){: width="250"}  
 * Yongwoo Cho (조용우)
 * 1993-11-10  
-* Traveling  
-* Swimming  
-* Drinking Zero-coke 
+* Traveling, Swimming, Drinking Zero-coke
+* CV: [PDF](/img/20181015-CV.pdf)
+* [github](https://github.com/nomorecoke), [linkedin](https://www.linkedin.com/in/yongwoo-cho-00629a169/)
+* Contact: lively93@naver.com
+* Kakaotalk : lively93
 
 &nbsp;
 ## Education
