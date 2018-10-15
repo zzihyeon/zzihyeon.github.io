@@ -39,8 +39,42 @@ tags: [CV]
      
 #### Old
 * Computer Architecture, IoT, Cache Memory   
-    
 &nbsp;   
+
+
+## Awards / Participation
+![Profile picture](/img/posco-award.jpg){: width="250"}
+* [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
+  * [Swell(very big wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)](https://github.com/zero-cola/Posco-AI-Challenge-2018)
+  * Github link -> [https://github.com/zero-cola/Posco-AI-Challenge-2018](https://github.com/zero-cola/Posco-AI-Challenge-2018)
+
+![Profile picture](/img/samsung-award.jpg){: width="250"}  
+* [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
+  * [Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)](https://github.com/zero-cola/Samsung-Data-Challenge-2018)
+  * Github link -> [https://github.com/zero-cola/Samsung-Data-Challenge-2018](https://github.com/zero-cola/Samsung-Data-Challenge-2018)
+* [2018 Naver AI hackerton - movie rating prediction](https://github.com/naver/ai-hackathon-2018) (2nd prize)
+  * data preprocessing, modeling(LSTM, CNN)
+  * [https://github.com/nomorecoke/naver-AI-final](https://github.com/zero-cola/Naver-AI-Hackathon-2018)
+  * Model detail with my paper -> [http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227)
+* 2018 SK T&B code challenge (16th)
+  * Movie recommendation
+  * Collarborative filtering
+  
+* SOSCON(Samsung Open Source CONference) 2016 HACKATHON (2nd prize)
+  * Arduino, Raspberry PI 
+* Sogang Univ. 4th start-up weekend (7th)
+  * Android App with google Map API
+* 2016 Sogang Univ. LINC technology competition (2nd prize)
+  * Arduino and Basic Data Analysis 
+
+* In progress
+  * [Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
+
+
+You can see me in kaggle leaderboard with name zerocoke
+&nbsp;   
+
+
 ## Publication    
   * [4] Memory bottleneck analysis in Large Machine learning models, work in progress
   
@@ -71,36 +105,7 @@ tags: [CV]
 
 &nbsp;  
 
-## Awards / Participation
-![Profile picture](/img/posco-award.jpg){: width="250"}
-* [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
-  * [Swell(very big wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)](https://github.com/zero-cola/Posco-AI-Challenge-2018)
-
-
-![Profile picture](/img/samsung-award.jpg){: width="250"}  
-* [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
-  * [Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)](https://github.com/zero-cola/Samsung-Data-Challenge-2018)
-* [2018 Naver AI hackerton - movie rating prediction](https://github.com/naver/ai-hackathon-2018) (2nd prize)
-  * data preprocessing, modeling(LSTM, CNN)
-  * [https://github.com/nomorecoke/naver-AI-final](https://github.com/zero-cola/Naver-AI-Hackathon-2018)
-   -> [Model detail with my paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07503227)
-* 2018 SK T&B code challenge (16th)
-  * Movie recommendation
-  * Collarborative filtering
   
-* SOSCON(Samsung Open Source CONference) 2016 HACKATHON (2nd prize)
-  * Arduino, Raspberry PI 
-* Sogang Univ. 4th start-up weekend (7th)
-  * Android App  
-* 2016 Sogang Univ. LINC technology competition (2nd prize)
-  * Arduino
-
-* In progress
-  * [Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
-
-
-You can see me in leader board with name zerocoke
-&nbsp;     
 
 
 <!--
