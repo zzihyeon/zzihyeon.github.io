@@ -62,7 +62,7 @@ tags: [CV]
   
 * SOSCON(Samsung Open Source CONference) 2016 HACKATHON (2nd prize)
   * Arduino, Raspberry PI 
-* Sogang Univ. 4th start-up weekend (7th)
+* 2017 Sogang Univ. 4th start-up weekend (7th)
   * Android App with google Map API
 * 2016 Sogang Univ. LINC technology competition (2nd prize)
   * Arduino and Basic Data Analysis 
