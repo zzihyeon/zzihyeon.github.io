@@ -70,10 +70,10 @@ tags: [CV]
   * Arduino and Basic Data Analysis 
 
 * In progress
-  * [Google Analytics Customer Revenue Prediction in kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction)
+  * [kakao shopping classification](https://arena.kakao.com/)
 
 
-You can see me in kaggle leaderboard with name zerocoke
+You can see me in leaderboard with name zerocoke(제로콜라)
 &nbsp;   
 
 
