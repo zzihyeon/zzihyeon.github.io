@@ -45,6 +45,10 @@ tags: [CV]
 
 
 ## Awards / Participation
+* [2018 Kakao Shopping Classification](https://arena.kakao.com/) (6th prize)
+  * [Charactacer embedding + Jaso embedding Ensemble model](https://github.com/zero-cola/Kakao-Arena-2019)
+  * Details in Github -> [https://github.com/zero-cola/Kakao-Arena-2019](https://github.com/zero-cola/Kakao-Arena-2019)
+
 ![Profile picture](/img/posco-award.jpg){: width="250"}
 * [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
   * [Swell(very big wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)](https://github.com/zero-cola/Posco-AI-Challenge-2018)
@@ -70,7 +74,7 @@ tags: [CV]
   * Arduino and Basic Data Analysis 
 
 * In progress
-  * [kakao shopping classification](https://arena.kakao.com/)
+  * 
 
 
 You can see me in leaderboard with name zerocoke(제로콜라)
