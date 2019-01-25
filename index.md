@@ -74,7 +74,7 @@ tags: [CV]
   * Arduino and Basic Data Analysis 
 
 * In progress
-  * 
+  * [2019 International AI Challenge Prediction Herobots](https://www.predictionherobots.com/challenge) Finalist 
 
 
 You can see me in leaderboard with name zerocoke(제로콜라)
