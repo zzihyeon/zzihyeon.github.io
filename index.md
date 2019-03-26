@@ -20,8 +20,9 @@ tags: [CV]
 * Traveling, Swimming, Drinking Zero-coke
 * CV: [PDF](/img/20181015-CV.pdf)
 * [github](https://github.com/nomorecoke), [linkedin](https://www.linkedin.com/in/yongwoo-cho-00629a169/)
-* Contact: lively93@naver.com
+* Contact: lively93@naver.com // yongwoo.cho@navercorp.com
 * Kakaotalk : lively93
+* now in Naver Shopping Data, Deep learning & Data Engineer (2019.03- )
 
 &nbsp;
 ## Education
@@ -30,7 +31,7 @@ tags: [CV]
      * 3.57 /4.5 (Cum laude)  
      * T.A scholarship 2015 - 2016    
 
-   * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019 expecting) 
+   * M.S in [Embedded Computing Laboratory](http://ecl.sogang.ac.kr) (Mar 2017 - Feb 2019) 
      * 4.26 /4.5
      
 &nbsp;
