@@ -46,6 +46,8 @@ tags: [CV]
 
 
 ## Awards / Participation
+* [2019 International AI Challenge Prediction Herobots](https://www.predictionherobots.com/challenge) (2nd prize)
+  * Predictt Bitcoin and Etherium price after 2 hours
 * [2018 Kakao Shopping Classification](https://arena.kakao.com/) (6th prize)
   * [Charactacer embedding + Jaso embedding Ensemble model](https://github.com/zero-cola/Kakao-Arena-2019)
   * Details in Github -> [https://github.com/zero-cola/Kakao-Arena-2019](https://github.com/zero-cola/Kakao-Arena-2019)
@@ -66,7 +68,6 @@ tags: [CV]
 * 2018 SK T&B code challenge (16th)
   * Movie recommendation
   * Collarborative filtering
-  
 * SOSCON(Samsung Open Source CONference) 2016 HACKATHON (2nd prize)
   * Arduino, Raspberry PI 
 * 2017 Sogang Univ. 4th start-up weekend (7th)
@@ -75,7 +76,8 @@ tags: [CV]
   * Arduino and Basic Data Analysis 
 
 * In progress
-  * [2019 International AI Challenge Prediction Herobots](https://www.predictionherobots.com/challenge) Finalist 
+  * [2019 Kakao Arena Brunch Article Recommendation](https://arena.kakao.com/c/2)
+
 
 
 You can see me in leaderboard with name zerocoke(제로콜라)
