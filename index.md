@@ -47,7 +47,7 @@ tags: [CV]
 
 ## Awards / Participation
 * [2019 International AI Challenge Prediction Herobots](https://www.predictionherobots.com/challenge) (2nd prize)
-  * Predictt Bitcoin and Etherium price after 2 hours
+  * Predict Bitcoin and Etherium price after 2 hours
 * [2018 Kakao Shopping Classification](https://arena.kakao.com/) (6th prize)
   * [Charactacer embedding + Jaso embedding Ensemble model](https://github.com/zero-cola/Kakao-Arena-2019)
   * Details in Github -> [https://github.com/zero-cola/Kakao-Arena-2019](https://github.com/zero-cola/Kakao-Arena-2019)
