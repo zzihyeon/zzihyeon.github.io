@@ -47,17 +47,17 @@ tags: [CV]
 
 ## Awards / Participation
 * [2019 International AI Challenge Prediction Herobots](https://www.predictionherobots.com/challenge) (2nd prize)
-  * Predict Bitcoin and Etherium price after 2 hours
+  * Predict Bitcoin and Ethereum price after 2 hours
 * [2018 Kakao Shopping Classification](https://arena.kakao.com/) (6th prize)
   * [Charactacer embedding + Jaso embedding Ensemble model](https://github.com/zero-cola/Kakao-Arena-2019)
   * Details in Github -> [https://github.com/zero-cola/Kakao-Arena-2019](https://github.com/zero-cola/Kakao-Arena-2019)
 
-![Profile picture](/img/posco-award.jpg){: width="250"}
+
 * [2018 POSCO AI Challenge](https://www.posco-aichallenge.kr/project/p02/) (1st prize)
   * [Swell(very big wave) prediction with RSCNN(Random Suffle Convolutional Neural Network)](https://github.com/zero-cola/Posco-AI-Challenge-2018)
   * Details in Github -> [https://github.com/zero-cola/Posco-AI-Challenge-2018](https://github.com/zero-cola/Posco-AI-Challenge-2018)
 
-![Profile picture](/img/samsung-award.jpg){: width="250"}  
+
 * [2018 SAMSUNG AI Challenge - Data Challenge](https://research.samsung.com/aichallenge/data) (1st prize)
   * [Predict missing data with NMDAE(NaN Mask Denoising Auto Encoder)](https://github.com/zero-cola/Samsung-Data-Challenge-2018)
   * Details in Github -> [https://github.com/zero-cola/Samsung-Data-Challenge-2018](https://github.com/zero-cola/Samsung-Data-Challenge-2018)
