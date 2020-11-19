@@ -1,6 +1,6 @@
 ---
 #layout: post
-title: Welcome to My CV
+title: Welcome
 #subtitle: Yong-woo Cho
 
 tags: [CV]
