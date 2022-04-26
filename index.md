@@ -51,6 +51,8 @@ tags: [CV]
 * GraphQL, RESTful API, NATS
 * Docker, AWS
 * MongoDB, Postgresql
+* Atlassian bamboo (CI/CD)
+* git, perforce
 * Korean - Native
 * English - intermediate  
 
