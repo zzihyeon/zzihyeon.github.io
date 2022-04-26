@@ -18,7 +18,7 @@ tags: [CV]
 * JIHYEON YU (유지현)
 * 1993-12-10  
 * Traveling, Swimming, Drinking Zero-coke
-* CV: [Link](https://www.notion.so/zerocoke/Yongwoo-Cho-6567175c9e0c4864b44c5e9e0b096430)
+* CV: [Link](https://docs.google.com/document/d/1-1tBSqpj01MTHtN_Ya4JSr7i05N6C_mC17wechabnHI/edit?usp=sharing)
 * [github](https://github.com/zzihyeon), [tistory](https://zzihyeon.tistory.com/)
 * Contact: guswldb123@gmail.com // jihyeon.yu@sk.com
 * Kakaotalk : guswldb12
