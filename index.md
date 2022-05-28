@@ -42,6 +42,7 @@ tags: [CV]
 * 장비 관리 자동화 서버 설계 및 개발
 * 자동화 Cron 서버 설계 및 개발
 * Naver Cafe Macro (personal) 개발
+* "CAVEA" App 개발
 
 
 &nbsp;   
