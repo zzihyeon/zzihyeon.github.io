@@ -34,7 +34,7 @@ tags: [CV]
 
 ## Interests 
 #### Current
-* golang, Nest.js, Next.js, graphQL, gRPC, mongoDB, postgresql, oracleDB, react
+* golang, Nest.js, Next.js, react, graphQL, gRPC, mongoDB, postgresql, oracleDB
 &nbsp;   
 
 ## Projects
