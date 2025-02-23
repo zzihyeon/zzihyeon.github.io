@@ -44,7 +44,7 @@ tags: [CV]
 * 서버 refactoring (golang, nodejs to nestjs / react, electron to nextjs)
 * 서버 일관성 확보 (Race condition 방지를 위한 redis 활용 / mongodb session 활용)
 * 서버 성능 최적화 (db query 개선 및 redis 활용)
-* Python 강사 활동 (django, flask web app 만들기 기초)
+* Python 사내 강사 활동 (django, flask web app 만들기 기초)
 * "CAVEA" App 개발([ios](https://apps.apple.com/kr/app/cavea-%EC%B9%B4%EB%B2%A0%EC%95%84/id1581323612),[android](https://play.google.com/store/apps/details?id=com.kr.cavea&hl=ko&gl=US),[web](https://www.cavea.kr/)) (backend server with golang / AWS / postgresql, mongoDB)
 
 
