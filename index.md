@@ -17,7 +17,7 @@ tags: [CV]
 ![Profile picture](/img/gogi.jpg){: width="250"}  
 * JIHYEON YU (유지현)
 * 1993-12-10  
-* Traveling, Swimming, Drinking Zero-coke
+* Traveling, Reading, Work out
 * CV: [Link](https://docs.google.com/document/d/1-1tBSqpj01MTHtN_Ya4JSr7i05N6C_mC17wechabnHI/edit?usp=sharing)
 * [github](https://github.com/zzihyeon), [tistory](https://zzihyeon.tistory.com/), [devocean](https://devocean.sk.com/experts/view.do?page=&boardType=&query=&ID=guswldb12&searchData=&subIndex=)
 * Contact: guswldb123@gmail.com // jihyeon.yu@sk.com
