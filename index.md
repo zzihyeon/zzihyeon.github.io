@@ -14,7 +14,7 @@ tags: [CV]
 {: refdef}
 
 ## Profile 
-![Profile picture](/img/profile.jpg){: width="250"}  
+![Profile picture](/img/gogi.jpg){: width="250"}  
 * JIHYEON YU (유지현)
 * 1993-12-10  
 * Traveling, Swimming, Drinking Zero-coke
