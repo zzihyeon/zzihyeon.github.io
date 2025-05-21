@@ -1,7 +1,7 @@
 ---
 #layout: post
 title: Welcome
-#subtitle: Yong-woo Cho
+#subtitle: Ji-hyeon Yu
 
 tags: [CV]
 ---
@@ -17,7 +17,19 @@ tags: [CV]
 ![Profile picture](/img/gogi.jpg){: width="250"}  
 * JIHYEON YU (유지현)
 * 1993-12-10  
-* Traveling, Reading, Work out
+* Traveling, Reading, <a href="#" onclick="toggleWorkoutImage(); return false;">Work out</a>
+
+<div id="workout-image" style="display:none; text-align: center; margin-top: 10px;">
+  <img src="/img/inbody.jpg" alt="Work out inbody" width="300">
+</div>
+
+<script>
+  function toggleWorkoutImage() {
+    const el = document.getElementById("workout-image");
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+</script>
+
 * CV: [Link](https://docs.google.com/document/d/1-1tBSqpj01MTHtN_Ya4JSr7i05N6C_mC17wechabnHI/edit?usp=sharing)
 * [github](https://github.com/zzihyeon), [tistory](https://zzihyeon.tistory.com/), [devocean](https://devocean.sk.com/experts/view.do?page=&boardType=&query=&ID=guswldb12&searchData=&subIndex=)
 * Contact: guswldb123@gmail.com // jihyeon.yu@sk.com
