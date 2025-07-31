@@ -17,7 +17,7 @@ tags: [CV]
 ![Profile picture](/img/gogi.jpg){: width="250"}  
 * JIHYEON YU (유지현)
 * 1993-12-10  
-* Traveling, Reading, <a href="#" onclick="toggleWorkoutImage(); return false;">Work out</a>
+* Traveling, Reading, <a href="https://zzihyeon.tistory.com">trading stock</a>, <a href="#" onclick="toggleWorkoutImage(); return false;">Work out</a>
 
 <div id="workout-image" style="display:none; text-align: center; margin-top: 10px;">
   <img src="/img/inbody.jpg" alt="Work out inbody" width="300">
