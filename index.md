@@ -66,7 +66,7 @@ tags: [CV]
 * Golang, Node.js, Nest.js, Next.js, React
 * GraphQL, RESTful API, NATS
 * Docker, AWS
-* MongoDB, Postgresql
+* MongoDB, Postgresql, oracleDB
 * Atlassian bamboo (CI/CD)
 * git, perforce
 * Korean - Native
