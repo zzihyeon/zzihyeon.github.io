@@ -480,9 +480,11 @@
     /* ───────────────────────── moments ───────────────────────── */
     .moments { background: var(--yellow); border-top: var(--line) solid var(--ink); border-bottom: var(--line) solid var(--ink); }
     .moments .eyebrow { color: var(--ink); }
-    .moments__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 24px; }
+    .moments__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 9px; margin-top: 24px; }
     .moments__grid button {
       position: relative;
+      min-width: 0;
+      width: 100%;
       padding: 0;
       aspect-ratio: 3 / 4;
       overflow: hidden;
@@ -491,7 +493,7 @@
       background: var(--white);
       box-shadow: var(--shadow-sm);
     }
-    .moments__grid img { width: 100%; height: 100%; object-fit: cover; }
+    .moments__grid img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .moments__grid .more {
       position: absolute;
       inset: 0;
@@ -640,6 +642,43 @@
       font-weight: 700;
     }
 
+    /* ───────────────────────── invitation opening ───────────────────────── */
+    body.intro-running { overflow: hidden; }
+    .invitation-intro {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: grid;
+      place-content: center;
+      justify-items: center;
+      gap: 22px;
+      padding: 24px;
+      background: var(--yellow);
+      color: var(--ink);
+      text-align: center;
+      transition: opacity .28s ease, visibility .28s ease;
+      animation: intro-emergency-exit .01s 5s forwards;
+    }
+    .invitation-intro.is-leaving { opacity: 0; visibility: hidden; pointer-events: none; }
+    .invitation-intro__ball {
+      width: 188px;
+      height: 188px;
+      object-fit: cover;
+      clip-path: circle(41.5% at 50% 48.3%);
+      transform-origin: 50% 85%;
+    }
+    .invitation-intro.is-ready .invitation-intro__ball { animation: intro-ball-shake .58s ease-in-out 3; }
+    .invitation-intro__title { margin: 0; font-family: var(--font-display); font-size: 20px; font-weight: 800; }
+    .invitation-intro__status { margin: -12px 0 0; font-size: 14px; }
+    .invitation-intro__skip { min-height: 44px; padding: 0 20px; border: 2px solid var(--ink); border-radius: 999px; background: transparent; font-size: 14px; font-weight: 700; }
+    @keyframes intro-ball-shake {
+      0%, 100% { transform: translateX(0) rotate(0); }
+      20% { transform: translateX(-7px) rotate(-16deg); }
+      45% { transform: translateX(7px) rotate(16deg); }
+      70% { transform: translateX(-4px) rotate(-8deg); }
+    }
+    @keyframes intro-emergency-exit { to { visibility: hidden; pointer-events: none; } }
+
     /* ───────────────────────── menu sheet ───────────────────────── */
     .menu {
       position: fixed;
@@ -685,6 +724,7 @@
       inset: 0;
       z-index: 70;
       overflow-y: auto;
+      scrollbar-gutter: stable;
       background: var(--blue-deep);
       -webkit-overflow-scrolling: touch;
     }
@@ -699,7 +739,7 @@
     .gallery__head {
       position: sticky;
       top: 0;
-      z-index: 2;
+      z-index: 20;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -720,10 +760,34 @@
       font-size: 18px;
       line-height: 1;
     }
+    .gallery.is-encountering { overflow-y: hidden; }
+    .gallery__journey { position: relative; height: 175svh; min-height: 750px; background: #759834; --grass-travel: 0px; --walk-progress: 0; }
+    .journey__stage { position: sticky; top: calc(62px + var(--safe-top)); height: calc(100svh - 62px - var(--safe-top)); min-height: 380px; overflow: hidden; isolation: isolate; }
+    .journey__field { position: absolute; inset: -260px 0; background: #759834 url('./assets/grass-route.png') center top / 100% auto repeat-y; image-rendering: pixelated; transform: translateY(var(--grass-travel)); }
+    .journey__stage::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse at 50% 40%, transparent 20%, rgba(17,40,20,.38)); }
+    .journey__marker { position: absolute; left: 50%; top: 33%; z-index: 3; display: grid; place-items: center; width: 56px; height: 60px; border: 4px solid var(--ink); background: var(--paper); color: var(--ink); font-size: 42px; font-weight: 900; line-height: 1; opacity: 0; transform: translate(-50%, 20px); box-shadow: 5px 5px 0 rgba(0,0,0,.3); }
+    .journey__hud { position: absolute; z-index: 4; left: 16px; right: 16px; bottom: calc(22px + var(--safe-bottom)); padding: 18px; border: 4px solid var(--ink); outline: 3px solid var(--paper); background: var(--paper); box-shadow: 6px 6px 0 rgba(0,0,0,.3); color: var(--ink); }
+    .journey__hud small { display: block; font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .1em; }
+    .journey__hud p { margin: 10px 0 14px; min-height: 52px; font-size: 18px; font-weight: 800; line-height: 1.5; word-break: keep-all; }
+    .journey__progress { height: 6px; margin-bottom: 12px; overflow: hidden; background: #d7dec5; }
+    .journey__progress i { display: block; height: 100%; background: #4c752b; transform-origin: left; transform: scaleX(var(--walk-progress)); }
+    .journey__skip { min-height: 44px; padding: 4px 0; border: 0; background: transparent; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+    .journey__arrow { float: right; padding-top: 12px; font-size: 18px; animation: bob 1s steps(2, end) infinite; }
+    .journey__shutter { position: absolute; inset: 0; z-index: 6; pointer-events: none; background: var(--ink); clip-path: inset(50% 0); }
+    .is-encounter .journey__marker { opacity: 1; transform: translate(-50%, 0); transition: transform .18s steps(3, end); }
+    .is-encounter .journey__field { animation: grass-rustle .28s steps(4, end) 2; }
+    .is-encounter .journey__shutter { animation: gold-encounter-wipe .65s .2s steps(8, end) both; }
+    .gallery__photos { animation: photos-arrive .3s ease-out; }
+    @keyframes grass-rustle { 25%, 75% { transform: translate(-5px, var(--grass-travel)); } 50% { transform: translate(5px, var(--grass-travel)); } }
+    @keyframes gold-encounter-wipe { from { clip-path: inset(50% 0); } to { clip-path: inset(0); } }
+    @keyframes photos-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
     .gallery__intro { padding: 36px 20px 22px; text-align: center; }
     .gallery__title { display: block; margin: 10px 0 0; font-size: 21px; font-weight: 800; letter-spacing: -.025em; line-height: 1.4; }
-    .gallery__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 16px; }
+    .gallery__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 10px; padding: 0 16px; }
     .gallery__grid button {
+      position: relative;
+      min-width: 0;
+      width: 100%;
       padding: 0;
       aspect-ratio: 3 / 4;
       overflow: hidden;
@@ -732,8 +796,7 @@
       background: var(--white);
       box-shadow: var(--shadow-sm);
     }
-    .gallery__grid button.is-landscape { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
-    .gallery__grid img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery__grid img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
     /* ───────────────────────── lightbox ───────────────────────── */
     .lightbox {
@@ -810,12 +873,22 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal { opacity: 1; transform: none; transition: none; }
-      .hero__card, .hero__spin svg, .marquee__track, .dialog__cursor, .menu__sheet { animation: none; }
+      .hero__card, .hero__spin svg, .marquee__track, .dialog__cursor, .menu__sheet,
+      .invitation-intro__ball, .journey__field, .journey__shutter, .journey__arrow, .gallery__photos { animation: none !important; }
+      .invitation-intro, .gallery__journey { display: none; }
       .btn, .acc summary svg, .toast { transition: none; }
     }
   </style>
+  <script type="module" src="./assets/experience.js"></script>
+  <noscript><style>.invitation-intro { display: none; }</style></noscript>
 </head>
 <body>
+  <div class="invitation-intro" id="invitationIntro" role="dialog" aria-modal="true" aria-label="청첩장 여는 중">
+    <img class="invitation-intro__ball" id="introBall" src="./assets/monster-ball.png" width="188" height="188" alt="몬스터볼" loading="eager" decoding="async" fetchpriority="high" />
+    <p class="invitation-intro__title">지현 × 민하</p>
+    <p class="invitation-intro__status">청첩장을 여는 중입니다…</p>
+    <button class="invitation-intro__skip" id="skipIntro" type="button">바로 보기</button>
+  </div>
   <div class="shell" id="top">
     <div class="progress" id="progress" aria-hidden="true"></div>
 
@@ -1025,11 +1098,27 @@
           <strong>MOMENTS · 18</strong>
           <button type="button" data-close-gallery aria-label="닫기">×</button>
         </header>
-        <div class="gallery__intro">
-          <p class="eyebrow">EVERY DAY WITH YOU</p>
-          <strong class="gallery__title">평범한 하루도<br />함께라서 특별하게</strong>
+        <div class="gallery__journey" id="galleryJourney" hidden>
+          <div class="journey__stage" id="journeyStage">
+            <div class="journey__field" aria-hidden="true"></div>
+            <span class="journey__marker" aria-hidden="true">!</span>
+            <div class="journey__hud">
+              <small>MOMENTS · 18</small>
+              <p id="journeyStatus" role="status" aria-live="polite">아래로 스크롤해 수풀을 지나가세요</p>
+              <div class="journey__progress" aria-hidden="true"><i></i></div>
+              <button class="journey__skip" id="skipJourney" type="button">바로 사진 보기</button>
+              <span class="journey__arrow" aria-hidden="true">▼</span>
+            </div>
+            <div class="journey__shutter" aria-hidden="true"></div>
+          </div>
         </div>
-        <div class="gallery__grid" id="galleryGrid"></div>
+        <div class="gallery__photos" id="galleryPhotos">
+          <div class="gallery__intro">
+            <p class="eyebrow">EVERY DAY WITH YOU</p>
+            <strong class="gallery__title">평범한 하루도<br />함께라서 특별하게</strong>
+          </div>
+          <div class="gallery__grid" id="galleryGrid"></div>
+        </div>
       </div>
     </section>
 
@@ -1060,11 +1149,9 @@
     const KAKAO_APP_KEY = 'fb83715d7e2771539e790f8045569451';
     const VENUE = { lat: 37.48292, lng: 127.03566, name: '엘블레스 양재' };
     const WEDDING_AT = new Date('2026-11-15T12:30:00+09:00');
-    const LANDSCAPE = new Set([12, 15]);
     const PHOTOS = Array.from({ length: 18 }, (_, i) => ({
       src: `${BASE}/assets/common/photos/gallery/gallery-${String(i + 1).padStart(2, '0')}.jpg`,
       alt: `지현과 민하의 웨딩 사진 ${i + 1}`,
-      landscape: LANDSCAPE.has(i + 1),
     }));
     const ACCOUNTS = {
       groom: [
@@ -1269,20 +1356,31 @@
     /* ───────── gallery grids ───────── */
     const momentsGrid = $('#momentsGrid');
     momentsGrid.innerHTML = PHOTOS.slice(0, 6).map((p, i) => `
-      <button type="button" data-lb-open="${i}" aria-label="${i === 5 ? '사진 12장 더 보기' : `웨딩 사진 ${i + 1} 크게 보기`}"${i === 5 ? ' data-open-gallery' : ''}>
+      <button type="button" data-open-gallery aria-label="${i === 5 ? '사진 12장 더 보기' : `웨딩 사진 ${i + 1}, 갤러리 보기`}">
         <img src="${p.src}" alt="${p.alt}" loading="lazy" />
         ${i === 5 ? '<span class="more">+12<small>MORE</small></span>' : ''}
       </button>`).join('');
 
     $('#galleryGrid').innerHTML = PHOTOS.map((p, i) => `
-      <button type="button" class="${p.landscape ? 'is-landscape' : ''}" data-lb-open="${i}" aria-label="웨딩 사진 ${i + 1} 크게 보기">
+      <button type="button" data-lb-open="${i}" aria-label="웨딩 사진 ${i + 1} 크게 보기">
         <img src="${p.src}" alt="${p.alt}" loading="lazy" />
       </button>`).join('');
 
     /* ───────── full gallery page ───────── */
     const gallery = $('#gallery');
-    const openGallery = () => { closeMenu(); gallery.hidden = false; gallery.scrollTop = 0; lock(true); };
-    const closeGallery = () => { if (!gallery.hidden) { gallery.hidden = true; lock(false); } };
+    let galleryTrigger = null;
+    const openGallery = () => {
+      galleryTrigger = document.activeElement;
+      closeMenu(); gallery.hidden = false; gallery.scrollTop = 0; lock(true);
+      document.dispatchEvent(new CustomEvent('gallery:open'));
+      $('[data-close-gallery]').focus({ preventScroll: true });
+    };
+    const closeGallery = () => {
+      if (gallery.hidden) return;
+      document.dispatchEvent(new CustomEvent('gallery:close'));
+      gallery.hidden = true; lock(false);
+      galleryTrigger?.focus({ preventScroll: true });
+    };
     document.addEventListener('click', (e) => {
       if (e.target.closest('[data-open-gallery]')) openGallery();
       if (e.target.closest('[data-close-gallery]')) closeGallery();
