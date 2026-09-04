@@ -105,6 +105,68 @@ export function mountGalleryJourney({ gallery, journey, stage, photos, status, s
   return { open, close, reveal, update, get phase() { return phase; } };
 }
 
+// Derive motion from scroll position, so scrolling back reverses the same path.
+export function pokemonPassPose(progress, width, reverse = false) {
+  const p = Math.min(1, Math.max(0, progress));
+  const ease = (t) => t * t * (3 - 2 * t);
+  const enter = ease(Math.min(1, p / .14));
+  const leave = ease(Math.min(1, (1 - p) / .14));
+  const opacity = Math.min(enter, leave);
+  const distance = (Math.max(0, width) + 128) * p;
+  return {
+    x: reverse ? width - distance : distance - 128,
+    y: 24 * (1 - enter) + 16 * (1 - leave) - Math.abs(Math.sin(p * Math.PI * 7)) * 4 * opacity,
+    tilt: Math.sin(p * Math.PI * 14) * 3 * opacity * (reverse ? -1 : 1),
+    opacity,
+  };
+}
+
+export function mountScrollPokemon({ lanes, scrollTarget, getViewport, motionQuery, frame = requestAnimationFrame, cancelFrame = cancelAnimationFrame, observeLayout = () => () => {} }) {
+  let pending = null;
+  let disposed = false;
+  const update = () => {
+    pending = null;
+    if (disposed) return;
+    const { height } = getViewport();
+    // Batch layout reads before transform writes; no continuously running animation loop.
+    const positions = lanes.map((lane) => ({ lane, rect: lane.getBoundingClientRect() }));
+    for (const { lane, rect } of positions) {
+      const visible = rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < height;
+      if (visible) lane.classList.add('is-visible');
+      else lane.classList.remove('is-visible');
+      if (motionQuery.matches || !visible) {
+        lane.style.setProperty('--pokemon-opacity', '0');
+        continue;
+      }
+      const progress = (height * .92 - rect.top) / Math.max(1, height * .78);
+      const pose = pokemonPassPose(progress, rect.width, lane.dataset.direction === 'reverse');
+      lane.style.setProperty('--pokemon-x', `${pose.x.toFixed(2)}px`);
+      lane.style.setProperty('--pokemon-y', `${pose.y.toFixed(2)}px`);
+      lane.style.setProperty('--pokemon-tilt', `${pose.tilt.toFixed(2)}deg`);
+      lane.style.setProperty('--pokemon-opacity', pose.opacity.toFixed(3));
+    }
+  };
+  const queue = () => {
+    if (!disposed && pending === null) pending = frame(update);
+  };
+  scrollTarget.addEventListener('scroll', queue, { passive: true });
+  scrollTarget.addEventListener('resize', queue);
+  motionQuery.addEventListener('change', queue);
+  const stopObserving = observeLayout(queue);
+  update();
+  return {
+    update,
+    destroy() {
+      disposed = true;
+      if (pending !== null) cancelFrame(pending);
+      scrollTarget.removeEventListener('scroll', queue);
+      scrollTarget.removeEventListener('resize', queue);
+      motionQuery.removeEventListener('change', queue);
+      stopObserving();
+    },
+  };
+}
+
 if (typeof document !== 'undefined') {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   mountInvitationIntro({
@@ -137,4 +199,15 @@ if (typeof document !== 'undefined') {
   });
   document.addEventListener('gallery:open', journey.open);
   document.addEventListener('gallery:close', journey.close);
+  mountScrollPokemon({
+    lanes: [...document.querySelectorAll('[data-pokemon-pass]')],
+    scrollTarget: window,
+    getViewport: () => ({ height: window.innerHeight }),
+    motionQuery: window.matchMedia('(prefers-reduced-motion: reduce)'),
+    observeLayout: (update) => {
+      const observer = new ResizeObserver(update);
+      document.querySelectorAll('.section').forEach((section) => observer.observe(section));
+      return () => observer.disconnect();
+    },
+  });
 }

@@ -9,18 +9,21 @@
   <link rel="canonical" href="https://zzihyeon.github.io/poke_wedding/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zzihyeon.github.io/poke_wedding/" />
-  <meta property="og:site_name" content="지현 × 민하의 결혼식" />
-  <meta property="og:title" content="지현 × 민하, 결혼합니다" />
+  <meta property="og:site_name" content="지현 🤍 민하의 결혼식" />
+  <meta property="og:title" content="지현 🤍 민하, 결혼합니다" />
   <meta property="og:description" content="2026. 11. 15. SUN · 12:30 PM · 양재 엘블레스" />
-  <meta property="og:image" content="https://zzihyeon.github.io/wedding/og-v2.png" />
+  <meta property="og:image" content="https://zzihyeon.github.io/wedding/og-v3.png" />
+  <meta property="og:image:secure_url" content="https://zzihyeon.github.io/wedding/og-v3.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1729" />
   <meta property="og:image:height" content="910" />
+  <meta property="og:image:alt" content="지현과 민하의 결혼식 초대장" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="지현 × 민하, 결혼합니다" />
+  <meta name="twitter:title" content="지현 🤍 민하, 결혼합니다" />
   <meta name="twitter:description" content="2026. 11. 15. SUN · 12:30 PM · 양재 엘블레스" />
-  <meta name="twitter:image" content="https://zzihyeon.github.io/wedding/og-v2.png" />
+  <meta name="twitter:image" content="https://zzihyeon.github.io/wedding/og-v3.png" />
   <link rel="icon" href="https://zzihyeon.github.io/wedding/favicon.png" />
-  <title>지현 × 민하, 결혼합니다</title>
+  <title>지현 🤍 민하, 결혼합니다</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -158,7 +161,7 @@
     .btn--ink { background: var(--ink); color: var(--yellow); }
     .btn--block { width: 100%; }
 
-    .section { padding: 72px 20px; text-align: center; }
+    .section { position: relative; padding: 72px 20px; text-align: center; }
     .section h2 {
       margin: 12px 0 0;
       font-size: 24px;
@@ -175,6 +178,32 @@
       line-height: 1.8;
       word-break: keep-all;
     }
+
+    /* Scroll visitors stay inside the existing section padding. */
+    .pokemon-pass {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 72px;
+      overflow: hidden;
+      contain: paint;
+      pointer-events: none;
+      user-select: none;
+    }
+    .pokemon-pass__traveler {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 128px;
+      height: 128px;
+      margin-top: -64px;
+      opacity: var(--pokemon-opacity, 0);
+      transform: translate3d(var(--pokemon-x, -128px), var(--pokemon-y, 24px), 0) rotate(var(--pokemon-tilt, 0deg));
+    }
+    .pokemon-pass.is-visible .pokemon-pass__traveler { will-change: transform, opacity; }
+    .pokemon-pass__sprite { width: 128px; height: 128px; max-width: none; object-fit: contain; image-rendering: pixelated; }
+    .pokemon-pass[data-direction="reverse"] .pokemon-pass__sprite { transform: scaleX(-1); }
 
     .photo-frame {
       position: relative;
@@ -876,6 +905,8 @@
       .hero__card, .hero__spin svg, .marquee__track, .dialog__cursor, .menu__sheet,
       .invitation-intro__ball, .journey__field, .journey__shutter, .journey__arrow, .gallery__photos { animation: none !important; }
       .invitation-intro, .gallery__journey { display: none; }
+      .pokemon-pass__traveler { opacity: 1; transform: translate3d(20px, 0, 0); }
+      .pokemon-pass[data-direction="reverse"] .pokemon-pass__traveler { left: auto; right: 20px; transform: none; }
       .btn, .acc summary svg, .toast { transition: none; }
     }
   </style>
@@ -927,6 +958,7 @@
 
     <!-- BRIDE & GROOM -->
     <section class="section intro reveal" id="intro" aria-label="신랑 신부와 혼주 소개">
+      <div class="pokemon-pass" data-pokemon-pass="pikachu" aria-hidden="true"><span class="pokemon-pass__traveler"><img class="pokemon-pass__sprite" src="./assets/pokemon/pikachu.png" width="128" height="128" alt="" decoding="async" draggable="false" /></span></div>
       <p class="eyebrow">BRIDE &amp; GROOM</p>
       <h2>두 사람이 만나<br />한 팀이 됩니다</h2>
 
@@ -951,6 +983,7 @@
 
     <!-- LETTER -->
     <section class="section letter reveal" id="letter" aria-label="초대의 글">
+      <div class="pokemon-pass" data-pokemon-pass="mimikyu" data-direction="reverse" aria-hidden="true"><span class="pokemon-pass__traveler"><img class="pokemon-pass__sprite" src="./assets/pokemon/mimikyu.png" width="128" height="128" alt="" decoding="async" draggable="false" /></span></div>
       <p class="eyebrow eyebrow--red">WITH LOVE</p>
       <h2>초대의 글</h2>
 
@@ -965,6 +998,7 @@
 
     <!-- DATE -->
     <section class="section date reveal" id="date" aria-label="예식 날짜">
+      <div class="pokemon-pass" data-pokemon-pass="charmander" aria-hidden="true"><span class="pokemon-pass__traveler"><img class="pokemon-pass__sprite" src="./assets/pokemon/charmander.png" width="128" height="128" alt="" decoding="async" draggable="false" /></span></div>
       <p class="eyebrow">SAVE THE DATE</p>
       <h2 class="date__big">11.15</h2>
       <p class="date__sub">2026 · SUNDAY · 12:30 PM</p>
@@ -989,6 +1023,7 @@
 
     <!-- MOMENTS -->
     <section class="section moments reveal" id="moments" aria-label="웨딩 사진 갤러리">
+      <div class="pokemon-pass" data-pokemon-pass="squirtle" data-direction="reverse" aria-hidden="true"><span class="pokemon-pass__traveler"><img class="pokemon-pass__sprite" src="./assets/pokemon/squirtle.png" width="128" height="128" alt="" decoding="async" draggable="false" /></span></div>
       <p class="eyebrow">MOMENTS</p>
       <h2>우리의 순간들</h2>
       <div class="moments__grid" id="momentsGrid"></div>
@@ -997,6 +1032,7 @@
 
     <!-- LOCATION -->
     <section class="section location reveal" id="location" aria-label="오시는 길">
+      <div class="pokemon-pass" data-pokemon-pass="bulbasaur" aria-hidden="true"><span class="pokemon-pass__traveler"><img class="pokemon-pass__sprite" src="./assets/pokemon/bulbasaur.png" width="128" height="128" alt="" decoding="async" draggable="false" /></span></div>
       <p class="eyebrow eyebrow--red">LOCATION</p>
       <h2>엘블레스 양재<br />다이아몬드홀</h2>
       <p class="location__addr">서울 서초구 강남대로 213 지하 1층</p>
@@ -1217,7 +1253,7 @@
 
     $('#shareBtn').addEventListener('click', async () => {
       const data = {
-        title: '지현 × 민하, 결혼합니다',
+        title: '지현 🤍 민하, 결혼합니다',
         text: '2026년 11월 15일 일요일 오후 12시 30분 · 양재 엘블레스 다이아몬드홀',
         url: window.location.href,
       };
