@@ -55,8 +55,11 @@ function setMap(id,scroll=false){
   if(scroll) $('#map').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function renderStays(){ $('#stay-grid').innerHTML=TRIP.stays.map(s=>`<article class="stay-card"><span class="stay-dates">${s.dates} · ${s.nights}</span><h3>${s.name}</h3><p>${s.note}</p><div class="card-links">${external(searchUrl(TRIP.places[s.id].query),'구글맵 ↗')}<button data-map="${s.id}">지도에서 보기</button></div></article>`).join(''); }
-function updateChecks(){const n=TRIP.checklist.filter(c=>checks[c[0]]).length;$('#check-progress').textContent=`${n} / ${TRIP.checklist.length}`;$('#check-bar').style.width=`${n/TRIP.checklist.length*100}%`;}
-function renderChecklist(){ $('#checklist-items').innerHTML=TRIP.checklist.map(c=>`<label class="check-item"><input type="checkbox" data-check="${c[0]}" ${checks[c[0]]?'checked':''}><span><strong>${c[1]}</strong><span>${c[2]}</span></span></label>`).join('');updateChecks(); }
+function updateChecks(){const n=TRIP.checklist.filter(c=>c[3]===true||checks[c[0]]).length;$('#check-progress').textContent=`${n} / ${TRIP.checklist.length}`;$('#check-bar').style.width=`${n/TRIP.checklist.length*100}%`;}
+function renderChecklist(){ $('#checklist-items').innerHTML=TRIP.checklist.map(c=>`<label class="check-item"><input type="checkbox" data-check="${c[0]}" ${c[3]===true?'checked disabled':checks[c[0]]?'checked':''}><span><strong>${c[1]}</strong><span>${c[2]}</span></span></label>`).join('');updateChecks(); }
+function renderDinnerBookings(){
+  $('#dining-bookings').innerHTML=TRIP.diningBookings.map(b=>{const p=TRIP.places[b.place];return `<article class="stay-card"><span class="stay-dates">${b.date.slice(5).replace('-','/')} · ${b.time} · ${b.guests}명</span><h3>${b.name} ${badge('확정')}</h3><p>${p.address}</p><p>${b.menu}</p><p>${b.note}</p><p class="fine-print">취소 12시간 전: 해밀턴 ${b.cancelLocal} / 한국 ${b.cancelKorea}. 이 시각보다 충분히 일찍 처리하세요.</p><div class="card-links">${external(searchUrl(p.query),'식당 구글맵 ↗')}<button data-map="${b.place}">지도에서 보기</button></div></article>`;}).join('');
+}
 function renderCountdown(){const now=new Date();const seoul=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);const days=Math.round((Date.parse('2026-11-16')-Date.parse(seoul))/86400000);$('#countdown').textContent=days>0?`D–${days}`:days===0?'D–DAY':seoul<='2026-11-28'?'ON TRIP':'WITH YOU';$('#countdown-label').textContent=days>0?'출발까지':days===0?'오늘 떠나요':seoul<='2026-11-28'?'여행하는 중':'우리의 여행 기록';}
 document.addEventListener('click',e=>{
   const day=e.target.closest('[data-date]');if(day){selectDay(day.dataset.date,day.classList.contains('date-tile'));return;}
@@ -70,4 +73,4 @@ $('#today-button').addEventListener('click',()=>selectDay(closestDate(),true));
 $('#saved-toggle').addEventListener('click',()=>{filter=filter==='saved'?'all':'saved';renderRestaurants();$('#places').scrollIntoView({behavior:'smooth'});});
 $('#checklist-items').addEventListener('change',e=>{if(e.target.dataset.check){checks[e.target.dataset.check]=e.target.checked;persist('our-november-checks',checks);updateChecks();}});
 $('#map-place').innerHTML=['숙소','식당','관광','투어 집결','공항'].map(type=>`<optgroup label="${type}">${Object.entries(mapPlaces).filter(([,p])=>p.type===type).map(([id,p])=>`<option value="${id}">${p.name}</option>`).join('')}</optgroup>`).join('');
-renderCalendar();selectDay(selectedDate);renderRestaurants();renderStays();renderChecklist();renderCountdown();setMap(currentMapId);
+renderCalendar();selectDay(selectedDate);renderRestaurants();renderStays();renderChecklist();renderDinnerBookings();renderCountdown();setMap(currentMapId);
